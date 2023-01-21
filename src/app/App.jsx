@@ -1,9 +1,13 @@
-function App() {
+import * as S from "./styles";
+
+import Aside from "../components/aside/Aside";
+
+const App = () => {
   return (
-    <>
-      <h1>App</h1>
-    </>
+    <S.AppContainer>
+      <Aside />
+    </S.AppContainer>
   );
-}
+};
 
 export default App;
