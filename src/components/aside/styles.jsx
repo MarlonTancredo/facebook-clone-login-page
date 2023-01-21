@@ -3,7 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 112px 0 16px;
+  @media (max-width: 830px) {
+    align-self: center;
+  }
 `;
 
 export const ImgContainer = styled.div`
@@ -12,6 +14,13 @@ export const ImgContainer = styled.div`
   svg {
     width: 300px;
   }
+  @media (max-width: 830px) {
+    align-self: center;
+  }
+`;
+
+export const PhraseContainer = styled.div`
+  display: flex;
 `;
 
 export const Phrase = styled.h2`
@@ -21,7 +30,9 @@ export const Phrase = styled.h2`
   font-weight: normal;
   line-height: 32px;
   width: 500px;
-  @media (max-width: 1075px) {
+  @media (max-width: 990px) {
     font-size: 24px;
+    line-height: 24px;
+    width: 400px;
   }
 `;

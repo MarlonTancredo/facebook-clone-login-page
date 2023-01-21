@@ -8,9 +8,11 @@ const Aside = () => {
       <S.ImgContainer>
         <Facebook />
       </S.ImgContainer>
-      <S.Phrase>
-        Facebook helps you connect and share with the people in your life.
-      </S.Phrase>
+      <S.PhraseContainer>
+        <S.Phrase>
+          Facebook helps you connect and share with the people in your life.
+        </S.Phrase>
+      </S.PhraseContainer>
     </S.Container>
   );
 };
