@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//Colors.
 const colors = {
   blue: "#1877f2",
   green: "#42b72a",
@@ -10,6 +11,7 @@ const colors = {
   hoverGreen: "#42b72af5",
 };
 
+//Main Container styles.
 export const Container = styled.div`
   font-size: 12px;
   padding-top: 6px;
@@ -21,6 +23,7 @@ export const Container = styled.div`
   box-shadow: 0 2px 8px rgb(0 0 0 / 20%), 0 8px 16px rgb(0 0 0 / 20%);
 `;
 
+//Form styles.
 export const Form = styled.div`
   margin-top: 12px;
 `;
@@ -37,6 +40,7 @@ export const Input = styled.input`
   }
 `;
 
+//Login button and create new account button styles.
 export const Button = styled.button`
   margin-top: 16px;
   padding: 13px;
@@ -46,8 +50,17 @@ export const Button = styled.button`
   font-size: ${(props) => (props.login ? 20 : props.register ? 18 : 12)}px;
   font-weight: bold;
   background-color: ${(props) =>
-    props.blue ? colors.blue : props.green ? colors.green : colors.blue};
-  width: ${(props) => (props.login ? 365 : props.register ? 200 : 100)}px;
+    props.blue
+      ? colors.blue
+      : props.green
+      ? colors.green
+      : colors.blue}; //Background-color will be passed by props.
+  width: ${(props) =>
+    props.login
+      ? 365
+      : props.register
+      ? 200
+      : 100}px; //Width will be passed by props.
   :hover {
     cursor: pointer;
     background-color: ${(props) =>
@@ -59,6 +72,7 @@ export const Button = styled.button`
   }
 `;
 
+//Forgotten Section styles.
 export const ForgottenSection = styled.div`
   text-align: center;
   margin-top: 18px;
@@ -75,6 +89,7 @@ export const ForgottenLink = styled.a`
   }
 `;
 
+//Line styles.
 export const Line = styled.div`
   align-items: center;
   border-bottom: 1px solid ${colors.grey};
@@ -85,10 +100,12 @@ export const Line = styled.div`
   text-align: center;
 `;
 
+//Create new account div styles.
 export const CreateNewAccount = styled.div`
   margin-bottom: 24px;
 `;
 
+//Create page div styles.
 export const CreatePage = styled.div`
   text-align: center;
   margin-top: 30px;

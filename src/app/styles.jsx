@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//Aside and main conatainer styles.
 export const AppContainer = styled.div`
   max-width: 1000px;
   margin-left: auto;
@@ -12,12 +13,14 @@ export const AppContainer = styled.div`
   }
 `;
 
+//Aside container styles.
 export const AsideContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
 `;
 
+//Main container styles.
 export const MainContainer = styled.div`
   margin-top: 120px;
   width: 100%;
@@ -29,6 +32,7 @@ export const MainContainer = styled.div`
   }
 `;
 
+//Footer container styles.
 export const Footer = styled.div`
   margin-top: 200px;
   text-align: center;

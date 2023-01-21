@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+//Aside container styles.
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -8,6 +9,7 @@ export const Container = styled.div`
   }
 `;
 
+//Image div and svg styles.
 export const ImgContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -19,6 +21,7 @@ export const ImgContainer = styled.div`
   }
 `;
 
+//Phrase styles.
 export const PhraseContainer = styled.div`
   display: flex;
 `;

@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 
 const App = () => {
   return (
-    <div>
+    <>
       <S.AppContainer>
         <S.AsideContainer>
           <Aside />
@@ -18,7 +18,7 @@ const App = () => {
       <S.Footer>
         <Footer createdBy="marlon tancredo" />
       </S.Footer>
-    </div>
+    </>
   );
 };
 
