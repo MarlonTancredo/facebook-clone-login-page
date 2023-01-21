@@ -28,3 +28,8 @@ export const MainContainer = styled.div`
     margin-top: 20px;
   }
 `;
+
+export const Footer = styled.div`
+  margin-top: 200px;
+  text-align: center;
+`;
